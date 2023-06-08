@@ -12,13 +12,18 @@ export class NegociacaoController {
   }
 
   adiciona() {
+    const negociacao = this.criaNegociacao();
+    console.log(negociacao);
+  }
+
+  criaNegociacao(): Negociacao {
     const regex = /-/g;
     const date = new Date(this.inputData.value.replace(regex, ','));
     const quantidade = parseInt(this.inputQuantidade.value);
     const valor = parseFloat(this.inputValor.value);
     const negociacao = new Negociacao(date, quantidade, valor);
+    return negociacao;
 
-    console.log(negociacao);
   }
 
 }
