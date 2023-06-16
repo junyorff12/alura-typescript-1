@@ -1,10 +1,19 @@
 export class Negociacao {
+  // construtor reduzido
   constructor(
     private _data: Date,
     private _quantidade: number,
     private _valor: number
   ) { }
 
+  //mesma coisa de ter um getter
+  // constructor(onstructor(
+  //   public readonly data: Date,
+  //   public readonly quantidade: number,
+  //   public readonly valor: number
+  // ){ };
+
+  //constructor padrao
   // private _data: Date;
   // private _quantidade: number;
   // private _valor: number;
